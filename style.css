@@ -16,6 +16,11 @@ body {
     line-height: 1.6;
 }
 
+/* Ομαδοποίηση (Grouping): Ενιαίο styling για όλους τους τίτλους */
+h1, h2 {
+    letter-spacing: 0.5px;
+}
+
 /* 3. Στυλ Αρχικής Σελίδας (Home / index.html) */
 #header {
     text-align: center;
@@ -61,6 +66,12 @@ body {
     transform: translateY(-2px);
 }
 
+/* Chaining: Ειδικό στυλ ΜΟΝΟ για κάρτα με κλάση featured */
+.recipe-card.featured {
+    border: 2px solid #e67e22;
+    background-color: #fff8f0;
+}
+
 /* 4. Στυλ Σελίδων Συνταγών (Recipe Pages) */
 .back-link {
     display: inline-block;
@@ -101,4 +112,10 @@ body {
 .recipe-section ul,
 .recipe-section ol {
     padding-left: 20px;
+}
+
+/* Descendant Combinator: Στοχεύει μόνο τα βήματα εκτέλεσης */
+.recipe-section ol li {
+    padding-left: 5px;
+    margin-bottom: 10px;
 }
